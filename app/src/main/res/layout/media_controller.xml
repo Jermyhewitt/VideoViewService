@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pause"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_pause_white_48dp"
+        android:background="?attr/selectableItemBackground"
+        android:id="@+id/pause"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="prev"
+        android:id="@+id/prev"
+        android:layout_toLeftOf="@id/pause"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/ic_skip_previous_white_48dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:id="@+id/next"
+        android:layout_marginLeft="25dp"
+        android:src="@drawable/ic_skip_next_white_48dp"
+        android:layout_toRightOf="@id/pause"
+        android:layout_centerVertical="true"/>
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/seekbar"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="full_screen"
+        android:src="@drawable/ic_aspect_ratio_white_36dp"
+        android:layout_marginRight="20dp"
+        android:layout_above="@id/seekbar"
+        android:layout_alignParentRight="true"
+        android:id="@+id/full"/>
+    <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="quality"
+    android:layout_marginRight="10dp"
+    android:src="@drawable/ic_settings_white_36dp"
+    android:id="@+id/quality"
+    android:layout_toLeftOf="@id/full"
+    android:layout_above="@id/seekbar"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2:30/"
+        android:layout_above="@id/seekbar"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/start"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4:30"
+        android:layout_above="@id/seekbar"
+        android:layout_toRightOf="@id/start"
+        android:id="@+id/end"/>
+
+
+
+</RelativeLayout>
